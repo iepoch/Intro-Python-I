@@ -22,3 +22,20 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+d = datetime.now()
+
+cd = input("Enter a month follwed by year ie(5 2020): ").split()
+
+if len(cd) == 0:
+      print(calendar.month(d.year, d.month))
+elif len(cd) == 1 and cd[0].isdigit() and (int(cd[0])) <=12:
+      month = int(cd[0])
+      print(calendar.month(d.year, month))
+elif len(cd) == 2 and cd[0].isdigit() and cd[1].isdigit() \
+and(int(cd[0] <= 12)) and (len(cd[1]) ==4):
+  month = int(cd[0])
+  year = int(cd[1])
+  print(calendar.month(year, month))
+
+
