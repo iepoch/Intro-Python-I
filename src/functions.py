@@ -4,7 +4,6 @@ def is_even(num):
         print("Odd")
     else:
         print("Even!")
-    
 
 
 # Read a number from the keyboard
@@ -16,3 +15,15 @@ is_even(num)
 #     print("Odd")
 # else:
 #     print("Even!")
+
+
+def double(n):
+    return n * 2
+
+
+my_int = 10
+double(my_int)
+
+# if pass by reference  my int = 20(changed)
+#if (pass by VALUE  my int - 10(we modified a copy)
+print(my_int)
